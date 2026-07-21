@@ -296,6 +296,7 @@ footer.site address{font-style:normal;font-size:.92rem;line-height:1.9}
     flex-direction:column;align-items:flex-start;justify-content:center;gap:1.8rem;padding:2rem 2.2rem;
     transform:translateX(100%);transition:.45s var(--ease);box-shadow:-20px 0 60px rgba(0,0,0,.4)}
   .navlinks.open{transform:none}
+  header.nav.solid{-webkit-backdrop-filter:none;backdrop-filter:none}
   .navlinks a{color:var(--paper)!important;font-size:1.2rem}
   .navlinks a.nav-cta{color:#231a09!important}
   .burger{display:flex}
@@ -316,8 +317,27 @@ footer.site address{font-style:normal;font-size:.92rem;line-height:1.9}
   .phero{padding:5.4rem 0 1.9rem}
   .scrollcue{display:none}
 }
+
+/* touch devices: no sticky-hover double-tap; show captions without hover */
+@media (hover:none){
+  .btn:hover .arr{transform:none}
+  .card:hover,.ptier:hover{transform:none}
+  .frame:hover img,.card:hover .ci img,.masonry figure:hover img{transform:none}
+  .masonry figcaption{opacity:1}
+}
+/* sticky mobile call bar */
+.mcall{display:none}
+@media (max-width:900px){
+  .mcall{display:flex;align-items:center;justify-content:center;gap:.55rem;
+    position:fixed;left:0;right:0;bottom:0;z-index:95;
+    background:var(--brass);color:#231a09;font-family:var(--body);font-weight:700;
+    font-size:1rem;letter-spacing:.01em;padding:.95rem 1rem;
+    box-shadow:0 -8px 24px rgba(0,0,0,.28)}
+  .mcall:active{background:var(--brass-bright)}
+  footer.site{padding-bottom:5rem}
+}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["LocalBusiness", "HomeAndConstructionBusiness"], "@id": "https://carvercowood.com/#business", "name": "Carver Co. Woodworking", "description": "Family-owned custom woodworking studio in Louisville, Kentucky, crafting live-edge slab tables, epoxy bar tops, countertops, and bespoke furniture from locally milled Kentucky hardwoods.", "url": "https://carvercowood.com/", "telephone": "+1-502-654-5070", "email": "info@carvercowood.com", "image": "https://carvercowood.com/images/slab-bar-top.jpg", "logo": "https://carvercowood.com/images/carver-co-logo.png", "priceRange": "$$", "founder": [{"@type": "Person", "name": "Alec Carver"}, {"@type": "Person", "name": "Lynette Carver"}], "address": {"@type": "PostalAddress", "addressLocality": "Louisville", "addressRegion": "KY", "addressCountry": "US"}, "areaServed": {"@type": "City", "name": "Louisville", "containedInPlace": {"@type": "State", "name": "Kentucky"}}, "geo": {"@type": "GeoCoordinates", "latitude": 38.2527, "longitude": -85.7585}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "17:00"}], "sameAs": ["https://www.facebook.com/p/Carver-Co-Woodworking-61555254792168/"], "knowsAbout": ["live-edge slab tables", "epoxy bar tops", "custom countertops", "Kentucky hardwood furniture", "slab flattening", "wood finishing"]}, {"@type": "WebSite", "@id": "https://carvercowood.com/#website", "url": "https://carvercowood.com/", "name": "Carver Co. Woodworking", "publisher": {"@id": "https://carvercowood.com/#business"}}, {"@type": "Service", "serviceType": "Custom live-edge woodworking", "provider": {"@id": "https://carvercowood.com/#business"}, "areaServed": {"@type": "State", "name": "Kentucky"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Custom Woodwork", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Live-Edge Dining & Coffee Tables"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Epoxy River Bar Tops"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Wood Countertops"}}]}}, {"@type": "AggregateRating", "@id": "https://carvercowood.com/#rating", "itemReviewed": {"@id": "https://carvercowood.com/#business"}, "ratingValue": "5", "reviewCount": "3", "bestRating": "5"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["LocalBusiness", "HomeAndConstructionBusiness"], "@id": "https://carvercowood.com/#business", "name": "Carver Co. Woodworking", "description": "Family-owned custom woodworking studio in Louisville, Kentucky, crafting live-edge slab tables, epoxy bar tops, countertops, and bespoke furniture from locally milled Kentucky hardwoods.", "url": "https://carvercowood.com/", "telephone": "+1-502-654-5070", "email": "info@carvercowood.com", "image": "https://carvercowood.com/images/slab-bar-top.jpg", "logo": "https://carvercowood.com/images/carver-co-logo.png", "priceRange": "$$", "founder": [{"@type": "Person", "name": "Alec Carver"}, {"@type": "Person", "name": "Lynette Carver"}], "address": {"@type": "PostalAddress", "addressLocality": "Louisville", "addressRegion": "KY", "addressCountry": "US"}, "areaServed": {"@type": "City", "name": "Louisville", "containedInPlace": {"@type": "State", "name": "Kentucky"}}, "geo": {"@type": "GeoCoordinates", "latitude": 38.2527, "longitude": -85.7585}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "17:00"}], "sameAs": ["https://www.facebook.com/p/Carver-Co-Woodworking-61555254792168/"], "knowsAbout": ["live-edge slab tables", "epoxy bar tops", "custom countertops", "Kentucky hardwood furniture", "slab flattening", "wood finishing"]}, {"@type": "WebSite", "@id": "https://carvercowood.com/#website", "url": "https://carvercowood.com/", "name": "Carver Co. Woodworking", "publisher": {"@id": "https://carvercowood.com/#business"}}, {"@type": "Service", "serviceType": "Custom live-edge woodworking", "provider": {"@id": "https://carvercowood.com/#business"}, "areaServed": {"@type": "State", "name": "Kentucky"}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Custom Woodwork", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Live-Edge Dining & Coffee Tables"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Epoxy River Bar Tops"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Wood Countertops"}}]}}, {"@type": "AggregateRating", "@id": "https://carvercowood.com/#rating", "itemReviewed": {"@id": "https://carvercowood.com/#business"}, "ratingValue": "5", "reviewCount": "3", "bestRating": "5"},{"@type": "Review", "itemReviewed": {"@id": "https://carvercowood.com/#business"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Daniel B."}, "reviewBody": "Couldn't wait to set it up. Absolutely love it! Couldn't be happier with it."},{"@type": "Review", "itemReviewed": {"@id": "https://carvercowood.com/#business"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Sandy W."}, "reviewBody": "We just love our finished live-edge coffee table. Everyone that sees it wants to know where we got it. We couldn't be more pleased with the product. It was done exactly as we ordered it. I highly recommend this couple to custom make your order."},{"@type": "Review", "itemReviewed": {"@id": "https://carvercowood.com/#business"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Terry B."}, "reviewBody": "Thank you for such a beautiful piece and expedited shipping!"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><header class="nav" id="nav">
@@ -504,5 +524,6 @@ footer.site address{font-style:normal;font-size:.92rem;line-height:1.9}
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 })();
 </script>
+<a class="mcall" href="tel:+15026545070" aria-label="Call Carver Co. Woodworking for a free quote"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call for a Free Quote</span></a>
 </body>
 </html>
