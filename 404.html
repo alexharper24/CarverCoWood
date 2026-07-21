@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found | Carver Co. Woodworking, Louisville KY</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b1510">
+<link rel="icon" href="images/carver-co-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Hanken+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light only;
+  --ink:#1b1510; --ink-soft:#3a2f25; --paper:#f4ecdf; --card:#fbf6ec;
+  --brass:#bd8a36; --brass-bright:#d9ab53; --walnut:#6f4d33;
+  --line:rgba(27,21,16,.14); --muted:#6b5d4d;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+@media (prefers-color-scheme: dark){html,body{background:var(--paper);color:var(--ink)}}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.65;
+  min-height:100svh;display:flex;align-items:center;justify-content:center;padding:2rem;text-align:center}
+main{max-width:34rem}
+.mark{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--brass);margin:0 auto 1.6rem;
+  display:grid;place-items:center;font-family:var(--display);font-weight:600;color:var(--brass);font-size:1.5rem}
+h1{font-family:var(--display);font-weight:540;font-size:clamp(2.2rem,7vw,3.4rem);letter-spacing:-.02em;line-height:1.06;margin-bottom:1rem}
+p{color:var(--ink-soft);margin-bottom:2rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:650;font-size:.92rem;
+  padding:.95rem 1.7rem;border-radius:999px;background:var(--brass);color:#241a09;text-decoration:none;transition:.4s var(--ease)}
+.btn:hover{background:var(--brass-bright)}
+.links{margin-top:1.6rem;font-size:.9rem}
+.links a{color:var(--walnut);text-decoration:underline;margin:0 .5rem}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">C</div>
+  <h1>This page wandered off the slab.</h1>
+  <p>The page you&rsquo;re looking for doesn&rsquo;t exist or has moved. Head back to the
+  workshop and we&rsquo;ll get you where you need to go.</p>
+  <a class="btn" href="/">Back to home &rarr;</a>
+  <p class="links">
+    <a href="gallery.html">Gallery</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Get a quote</a>
+  </p>
+</main>
+</body>
+</html>
