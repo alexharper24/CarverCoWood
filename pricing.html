@@ -102,11 +102,11 @@ h3{font-size:clamp(1.3rem,2vw,1.7rem);letter-spacing:-.015em}
 header.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:.5s var(--ease)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;
   padding:1.2rem 0;transition:.5s var(--ease)}
-.brand{display:flex;align-items:center;gap:.85rem;color:var(--paper)}
+.brand{display:flex;align-items:center;gap:.85rem;color:var(--paper);text-shadow:0 1px 8px rgba(0,0,0,.65),0 0 2px rgba(0,0,0,.55)}
 .brand .mark{width:44px;height:44px;display:grid;place-items:center;flex:none;transition:.5s var(--ease)}
-.brand .mark img{width:100%;height:100%;object-fit:contain}
+.brand .mark img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 1px 5px rgba(0,0,0,.5))}
 .brand b{font-family:var(--display);font-weight:560;font-size:1.18rem;letter-spacing:-.01em;line-height:1;display:block}
-.brand span{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:700}
+.brand span{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-bright);font-weight:700}
 .navlinks{display:flex;align-items:center;gap:2.2rem}
 .navlinks a{color:var(--paper);font-weight:560;font-size:.93rem;letter-spacing:.01em;position:relative;padding:.2rem 0}
 .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--brass);transition:width .35s var(--ease)}
@@ -128,6 +128,7 @@ header.nav.solid .burger span{background:var(--ink)}
 /* pages without a dark hero use the solid nav from the start */
 header.nav.light .brand,header.nav.light .navlinks a{color:var(--ink)}
 header.nav.solid .brand span,header.nav.light .brand span{color:#8a6420}
+header.nav.solid .brand,header.nav.light .brand{text-shadow:none}
 header.nav.light .burger span{background:var(--ink)}
 
 /* hero */
@@ -438,7 +439,7 @@ footer.site address{font-style:normal;font-size:.92rem;line-height:1.9}
   <div class="wrap">
     <div class="fgrid">
       <div class="fbrand">
-        <img class="flogo" src="images/logos/logo-full.png" alt="Carver Co. Woodworking — Louisville, KY" width="260" height="69">
+        <b>Carver Co.</b><span>Woodworking &middot; Louisville KY</span>
         <p>Handcrafted live-edge tables, bar tops, and custom furniture milled from local
         Kentucky hardwoods. A family workshop in Louisville.</p>
       </div>
